@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niner Park: Human-Centered Campus Mobility</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: {
+                        ninerGreen: '#005035',
+                        ninerGold: '#A49667',
+                        ninerDark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-ninerGold selection:text-slate-950">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-ninerGreen to-emerald-800 flex items-center justify-center shadow-lg shadow-ninerGreen/30 border border-emerald-500/30">
+                    <i data-lucide="car" class="w-5 h-5 text-ninerGold"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-white block">NINER PARK</span>
+                    <span class="text-xs text-ninerGold font-medium tracking-wider uppercase">UNC Charlotte Mobility Hub</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#pulse" class="hover:text-ninerGold transition-colors">Campus Pulse</a>
+                <a href="#ethics" class="hover:text-ninerGold transition-colors">Ethics Simulator</a>
+                <a href="#mirror" class="hover:text-ninerGold transition-colors">Mirror Test</a>
+                <a href="#innovate" class="hover:text-ninerGold transition-colors">Innovation Pitch</a>
+            </nav>
+            <a href="#innovate" class="px-5 py-2.5 rounded-xl bg-ninerGreen hover:bg-emerald-800 text-white font-semibold text-sm transition-all shadow-lg shadow-ninerGreen/20 border border-emerald-600/30">
+                Launch Pitch
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-20 pb-28 border-b border-slate-800/60">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-ninerGreen/20 via-slate-950/40 to-slate-950 pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-ninerGold text-xs font-semibold mb-6 shadow-inner">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>October 2026 Journal Reflection & Campus Study</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Beyond the Parking Gate: <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-ninerGold to-amber-200">Ethics, AI, & UNCC Mobility</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Exploring how rigid algorithmic gatekeeping, parking friction, and automated systems impact working students—and reimagining campus mobility through human-centered intentionality and care.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#ethics" class="px-7 py-3.5 rounded-xl bg-ninerGold hover:bg-amber-600 text-slate-950 font-bold transition-all shadow-xl shadow-ninerGold/10 flex items-center space-x-2">
+                    <span>Test the Ethics Algorithm</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#mirror" class="px-7 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-700 transition-all flex items-center space-x-2">
+                    <span>Explore the Mirror Test</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Pulse & Lot Explorer -->
+    <section id="pulse" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-ninerGold font-semibold text-xs tracking-widest uppercase block mb-2">Real-World Friction</span>
+                <h2 class="text-3xl font-extrabold text-white">UNC Charlotte Parking & Dining Pulse</h2>
+            </div>
+            <p class="text-slate-400 text-sm max-w-md mt-2 md:mt-0">
+                Analyzing peak class changeovers (11:45 AM & 1:15 PM), traffic bottlenecks, permit stress, and dining congestion across campus.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 relative overflow-hidden group hover:border-ninerGold/50 transition-all">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-rose-500/5 rounded-full blur-2xl group-hover:bg-rose-500/10 transition-all"></div>
+                <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center mb-5 border border-rose-500/20">
+                    <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Deck & Lot Bottlenecks</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Union Deck, CRI Deck, and South Village face severe capacity strains when thousands of commuter and residential students converge simultaneously.
+                </p>
+                <div class="text-xs font-semibold text-rose-400 bg-rose-500/10 py-1 px-3 rounded-lg inline-block">High Stress Zone</div>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 relative overflow-hidden group hover:border-ninerGold/50 transition-all">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition-all"></div>
+                <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-5 border border-amber-500/20">
+                    <i data-lucide="clock" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Synchronized Rush Hours</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Classes ending at identical intervals create massive spikes in dining halls and transit stops, treating food and parking purely as rushed transactions.
+                </p>
+                <div class="text-xs font-semibold text-amber-400 bg-amber-500/10 py-1 px-3 rounded-lg inline-block">Peak: 11:45 AM - 1:15 PM</div>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 relative overflow-hidden group hover:border-ninerGold/50 transition-all">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl group-hover:bg-emerald-500/10 transition-all"></div>
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5 border border-emerald-500/20">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Algorithmic Gatekeeping</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Permit distribution systems that rely on rigid scores can inadvertently penalize students who lack resources or face unexpected life circumstances.
+                </p>
+                <div class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 py-1 px-3 rounded-lg inline-block">Ethics Dilemma</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- "Golden Spot" Ethics Simulator -->
+    <section id="ethics" class="py-24 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-ninerGold font-semibold text-xs tracking-widest uppercase block mb-2">Algorithmic Ethics</span>
+                <h2 class="text-3xl font-extrabold text-white mb-4">The "Golden Spot" Permit Simulator</h2>
+                <p class="text-slate-400 text-sm">
+                    Test the hypothetical criteria proposed for priority parking passes. Adjust the sliders to see how rigid metrics systematically exclude working and struggling students.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl">
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2">
+                            <span class="text-slate-300">Clean Record / Driving History Score</span>
+                            <span id="recordVal" class="text-ninerGold font-bold">85%</span>
+                        </div>
+                        <input type="range" id="recordRange" min="0" max="100" value="85" class="w-full accent-ninerGold cursor-pointer" oninput="updateSimulation()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2">
+                            <span class="text-slate-300">Commute Distance from Campus</span>
+                            <span id="distVal" class="text-ninerGold font-bold">15 miles</span>
+                        </div>
+                        <input type="range" id="distRange" min="1" max="50" value="15" class="w-full accent-ninerGold cursor-pointer" oninput="updateSimulation()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2">
+                            <span class="text-slate-300">Student Resource / Flexibility Index</span>
+                            <span id="resourceVal" class="text-slate-400 font-bold">Moderate</span>
+                        </div>
+                        <input type="range" id="resourceRange" min="1" max="10" value="5" class="w-full accent-ninerGold cursor-pointer" oninput="updateSimulation()">
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 text-center relative overflow-hidden flex flex-col justify-center">
+                    <div id="simBadge" class="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs font-bold mb-4 mx-auto bg-amber-500/10 text-amber-400 border border-amber-500/30">
+                        Conditional Access
+                    </div>
+                    <div class="text-3xl font-extrabold text-white mb-3" id="simResultTitle">The Privilege Gap</div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6" id="simResultDesc">
+                        This applicant meets baseline metrics but struggles with financial flexibility. Rigid point systems fail to account for off-campus work hours and unforeseen life burdens.
+                    </p>
+                    <div class="text-xs text-slate-500 italic">
+                        "If they physically, mentally, emotionally, or financially meet the criteria, those who lack resources are at a loss through no fault of their own."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Human-Centered Mirror Test -->
+    <section id="mirror" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-ninerGold font-semibold text-xs tracking-widest uppercase block mb-2">Critical Inquiry</span>
+            <h2 class="text-3xl font-extrabold text-white mb-4">The Campus Mirror Test</h2>
+            <p class="text-slate-400 text-sm">
+                Unpacking what campus systems assume about us, and what optimization algorithms fundamentally fail to capture.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold text-ninerGold uppercase tracking-wider mb-3">Step 1</div>
+                    <h3 class="text-xl font-bold text-white mb-3">What Did We Just See?</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        At peak hours, campus dining and parking facilities face intense physical congestion and waiting bottlenecks, leaving students feeling rushed and anxious between classes.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 text-xs text-slate-500 font-medium">Neutral Observation</div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold text-ninerGold uppercase tracking-wider mb-3">Step 2</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Built-in Assumptions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Assumes students operate on rigid, synchronized schedules and treat food or parking purely as transactional fuel, ignoring kitchen labor capacity and human well-being.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 text-xs text-slate-500 font-medium">Algorithmic Bias Check</div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold text-ninerGold uppercase tracking-wider mb-3">Step 3</div>
+                    <h3 class="text-xl font-bold text-white mb-3">What Remains "Un-Mirrorable?"</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        An algorithm cannot capture the informal social bonds formed in a line, the mental breath between heavy lectures, or the warmth of staff recognizing a regular student.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 text-xs text-slate-500 font-medium">Human Context & Ritual</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Sandbox & Intent Mapper -->
+    <section id="innovate" class="py-24 bg-gradient-to-b from-slate-900/40 to-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-ninerGold font-semibold text-xs tracking-widest uppercase block mb-2">Intentionality & Care</span>
+            <h2 class="text-3xl font-extrabold text-white mb-4">Niner Innovation Pitch Generator</h2>
+            <p class="text-slate-400 text-sm max-w-xl mx-auto mb-10">
+                Choose your focus angle to build a human-centered mobility solution for UNC Charlotte.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+                <button onclick="selectAngle('Design & Tech App')" id="btn-Design & Tech App" class="p-5 rounded-2xl bg-slate-900 border border-ninerGold text-white font-semibold text-sm transition-all shadow-lg">
+                    Design / Tech App
+                </button>
+                <button onclick="selectAngle('Operational & Policy')" id="btn-Operational & Policy" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 text-slate-300 font-semibold text-sm transition-all hover:border-slate-700">
+                    Operational & Policy
+                </button>
+                <button onclick="selectAngle('Student Experience')" id="btn-Student Experience" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 text-slate-300 font-semibold text-sm transition-all hover:border-slate-700">
+                    Student Experience
+                </button>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-left shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-ninerGold/5 rounded-full blur-3xl pointer-events-none"></div>
+                <h3 class="text-lg font-bold text-white mb-2 flex items-center space-x-2">
+                    <i data-lucide="compass" class="w-5 h-5 text-ninerGold"></i>
+                    <span id="pitchTitle">Selected Focus: Design & Tech App</span>
+                </h3>
+                <p class="text-slate-400 text-sm mb-6" id="pitchDesc">
+                    Building a campus mobility and equity companion that prioritizes accessibility, transparent fairness in parking distribution, and community connection over cold efficiency metrics.
+                </p>
+                <div class="flex items-center justify-between pt-6 border-t border-slate-800">
+                    <span class="text-xs font-semibold text-ninerGold">UNC Charlotte • Human-Centered AI Initiative</span>
+                    <button onclick="alert('Pitch card generated successfully! Ready for your presentation.')" class="px-5 py-2.5 rounded-xl bg-ninerGold hover:bg-amber-600 text-slate-950 font-bold text-xs transition-all shadow-md">
+                        Export Pitch Card
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Niner Park Mobility Hub. Designed with intention and care for UNC Charlotte.</p>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        lucide.createIcons();
+
+        function updateSimulation() {
+            const record = document.getElementById('recordRange').value;
+            const dist = document.getElementById('distRange').value;
+            const resource = document.getElementById('resourceRange').value;
+
+            document.getElementById('recordVal').innerText = record + '%';
+            document.getElementById('distVal').innerText = dist + ' miles';
+
+            let resText = "Balanced";
+            if (resource <= 3) resText = "High Struggle / Limited";
+            else if (resource >= 8) resText = "High Resource";
+            document.getElementById('resourceVal').innerText = resText;
+
+            const badge = document.getElementById('simBadge');
+            const title = document.getElementById('simResultTitle');
+            const desc = document.getElementById('simResultDesc');
+
+            if (resource <= 3) {
+                badge.className = "inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs font-bold mb-4 mx-auto bg-rose-500/10 text-rose-400 border border-rose-500/30";
+                badge.innerText = "System Exclusion Risk";
+                title.innerText = "Privilege Gap Detected";
+                desc.innerText = "This profile highlights how strict metric filters penalize students facing financial or resource hardships through no fault of their own.";
+            } else if (record >= 80 && dist >= 10) {
+                badge.className = "inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs font-bold mb-4 mx-auto bg-emerald-500/10 text-emerald-400 border border-emerald-500/30";
+                badge.innerText = "Pass Granted";
+                title.innerText = "Golden Spot Qualified";
+                desc.innerText = "Pass meets automated criteria, but benefits primarily from favorable baseline privilege rather than true community equity.";
+            } else {
+                badge.className = "inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs font-bold mb-4 mx-auto bg-amber-500/10 text-amber-400 border border-amber-500/30";
+                badge.innerText = "Conditional Access";
+                title.innerText = "Borderline Evaluation";
+                desc.innerText = "Standard metrics create friction and anxiety, demonstrating the need for human-centered accommodations.";
+            }
+        }
+
+        function selectAngle(angle) {
+            ['Design & Tech App', 'Operational & Policy', 'Student Experience'].forEach(a => {
+                const btn = document.getElementById('btn-' + a);
+                if (a === angle) {
+                    btn.className = "p-5 rounded-2xl bg-slate-900 border border-ninerGold text-white font-semibold text-sm transition-all shadow-lg";
+                } else {
+                    btn.className = "p-5 rounded-2xl bg-slate-900 border border-slate-800 text-slate-300 font-semibold text-sm transition-all hover:border-slate-700";
+                }
+            });
+
+            document.getElementById('pitchTitle').innerText = "Selected Focus: " + angle;
+            if (angle === 'Design & Tech App') {
+                document.getElementById('pitchDesc').innerText = "Building a campus mobility and equity companion that prioritizes accessibility, transparent fairness in parking distribution, and community connection over cold efficiency metrics.";
+            } else if (angle === 'Operational & Policy') {
+                document.getElementById('pitchDesc').innerText = "Revising UNC Charlotte parking regulations and permit allocation rules to account for working students, off-campus housing realities, and economic diversity.";
+            } else {
+                document.getElementById('pitchDesc').innerText = "Enhancing the daily student journey by smoothing class transition bottlenecks, dining queues, and reducing commuter anxiety through empathy-driven support.";
+            }
+        }
+    </script>
+</body>
+</html>
